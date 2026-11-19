@@ -38,6 +38,11 @@ Estado: Desarrollo inicial.
     3. Entrégame el Checklist de Pruebas Manuales para mí.
     4. ESPERA mi respuesta. NO actualices `memoria.md` hasta que yo escriba explícitamente: "FUNCIONA".
     5. Si yo digo "FALLA", NO actualices `memoria.md`. Repara el error basándote en mi feedback y vuelve al paso 1.
+14. **ACTUALIZACIÓN AUTOMÁTICA DE CHANGELOG:**
+    Cuando yo diga "FUNCIONA" y actualices memoria.md, TAMBIÉN debes:
+    - Agregar una entrada al CHANGELOG.md bajo la versión actual
+    - Usar formato: "## [X.Y.Z] - YYYY-MM-DD" con bullets de lo cambiado
+    - Si no existe CHANGELOG.md, créalo con el formato estándar
 
 # 3. ESTRUCTURA DEL PROYECTO
 

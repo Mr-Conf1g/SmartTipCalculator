@@ -1,0 +1,21 @@
+# === Archivos Internos de IA (Mantener solo en local) ===
+memoria.md
+AGENTS.md
+
+# === Variables de Entorno ===
+.env
+
+# === Archivos del Sistema Operativo ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Archivos de Editores de Código ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Dependencias (Preparado para el futuro) ===
+node_modules/
+package-lock.json
