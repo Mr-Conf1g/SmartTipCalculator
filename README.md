@@ -1,13 +1,13 @@
 # 💸 SmartTip Calculator (Calculadora de Propinas)
 
-Una calculadora de propinas ultrarrápida y sin dependencias, construida con **JavaScript Vanilla (ES6+)**. Cuenta con cálculo en tiempo real, validación estricta de inputs y un diseño totalmente responsivo.
+Una calculadora de propinas ultrarrápida y sin dependencias, construida con **JavaScript Vanilla (ES6+)**. Cuenta con cálculo manual, validación estricta de inputs y un diseño totalmente responsivo.
 
 > **🤖 Desarrollo Asistido por IA:** Este proyecto fue desarrollado utilizando un flujo de trabajo personalizado *Human-in-the-Loop*. Revisa el archivo [AI_WORKFLOW.md](./AI_WORKFLOW.md) para ver cómo orquesté agentes de IA para construirlo manteniendo estándares de ingeniería.
 
 ![Demo de SmartTip](./screenshots/nivel1_calculadoradepropinas.webp)
 
 ## ✨ Características
-- ⚡ **Cálculo en Tiempo Real:** Calcula propinas al instante al seleccionar porcentajes predefinidos (10%, 15%, 20%) o ingresar uno personalizado.
+- 🎯 **Cálculo Manual:** Los botones rápidos 10%/15%/20% solo seleccionan el porcentaje. Presiona "Calcular" para ver el resultado. Sin cálculo automático en tiempo real.
 - 🛡️ **Validación Estricta:** Previene números negativos, valores en cero y caracteres no numéricos sin usar ventanas emergentes (`alert()`) intrusivas.
 - 📱 **Diseño Responsivo:** Se adapta perfectamente a escritorio, tablet y dispositivos móviles.
 - 🎨 **CSS Moderno:** Utiliza Variables CSS para un mantenimiento sencillo y consistencia visual.
