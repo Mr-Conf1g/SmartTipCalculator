@@ -4,7 +4,7 @@ Una calculadora de propinas ultrarrápida y sin dependencias, construida con **J
 
 > **🤖 Desarrollo Asistido por IA:** Este proyecto fue desarrollado utilizando un flujo de trabajo personalizado *Human-in-the-Loop*. Revisa el archivo [AI_WORKFLOW.md](./AI_WORKFLOW.md) para ver cómo orquesté agentes de IA para construirlo manteniendo estándares de ingeniería.
 
-![Demo de SmartTip](./screenshots/desktop.png)
+![Demo de SmartTip](./screenshots/nivel1_calculadoradepropinas.webp)
 
 ## ✨ Características
 - ⚡ **Cálculo en Tiempo Real:** Calcula propinas al instante al seleccionar porcentajes predefinidos (10%, 15%, 20%) o ingresar uno personalizado.
