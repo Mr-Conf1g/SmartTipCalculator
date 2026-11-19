@@ -1,0 +1,250 @@
+/* ========================================
+   Variables CSS - Paleta y Espaciados
+   ======================================== */
+:root {
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-light: #eef2ff;
+  --color-background: #f3f4f6;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-border: #d1d5db;
+  --color-error: #dc2626;
+  --color-error-bg: #fef2f2;
+  --color-success: #16a34a;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --transition-fast: 150ms ease;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--space-lg) var(--space-md); background-color: var(--color-background); font-family: var(--font-family); font-size: var(--font-size-base); color: var(--color-text); line-height: 1.5; }
+.calculator-container { width: 100%; max-width: 450px; background-color: var(--color-surface); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); padding: var(--space-xl); }
+.calculator-container h1 { font-size: var(--font-size-2xl); font-weight: 700; text-align: center; margin-bottom: var(--space-xl); color: var(--color-text); }
+.tip-form { display: flex; flex-direction: column; gap: var(--space-lg); }
+.form-group { display: flex; flex-direction: column; gap: var(--space-xs); }
+.form-group label { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text); }
+.form-group input { width: 100%; padding: var(--space-md); font-size: var(--font-size-base); font-family: inherit; color: var(--color-text); background-color: var(--color-surface); border: 2px solid var(--color-border); border-radius: var(--border-radius); transition: border-color var(--transition-fast), box-shadow var(--transition-fast); }
+.form-group input::placeholder { color: var(--color-text-muted); }
+.form-group input:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); }
+.form-group input.valid { border-color: var(--color-success); }
+.form-group input.invalid { border-color: var(--color-error); }
+.error-message { font-size: var(--font-size-sm); color: var(--color-error); min-height: 1.25rem; display: block; }
+/* ========================================
+   Grupo de Porcentajes (Botones Rápidos + Custom)
+   ======================================== */
+.tip-percentage-group {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.tip-percentage-group legend {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.quick-tips {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.tip-btn {
+  flex: 1;
+  padding: var(--space-md);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.tip-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.tip-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+.tip-btn[aria-pressed="true"] {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border-color: var(--color-primary-hover);
+}
+
+.custom-tip-group {
+  margin-top: var(--space-sm);
+}
+
+/* ========================================
+   Botón Calcular
+   ======================================== */
+.calculate-btn {
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  margin-top: var(--space-sm);
+}
+
+.calculate-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.calculate-btn:active {
+  transform: scale(0.98);
+}
+
+.calculate-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+/* ========================================
+   Área de Resultados
+   ======================================== */
+.results {
+  background-color: var(--color-primary-light);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  margin-top: var(--space-md);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-xs) 0;
+}
+
+.result-row:first-child {
+  border-bottom: 1px solid rgba(79, 70, 229, 0.2);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.result-label {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+}
+
+.result-value {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.result-row.total .result-label {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.result-row.total .result-value {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+}
+
+/* ========================================
+   Banner de Error Global
+   ======================================== */
+.error-banner {
+  background-color: var(--color-error-bg);
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  margin-top: var(--space-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-align: center;
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+
+/* ========================================
+   Utilidades de Ocultamiento
+   ======================================== */
+[hidden] {
+  display: none !important;
+}
+
+/* ========================================
+   Responsive: Móvil (≤480px)
+   ======================================== */
+@media (max-width: 480px) {
+  .calculator-container {
+    padding: var(--space-lg);
+    border-radius: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: none;
+  }
+
+  .calculator-container h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  .quick-tips {
+    flex-wrap: wrap;
+  }
+
+  .tip-btn {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 0;
+  }
+}
+
+/* ========================================
+   Responsive: Muy estrecho (≤360px)
+   ======================================== */
+@media (max-width: 360px) {
+  .tip-btn {
+    flex: 1 1 100%;
+  }
+}
